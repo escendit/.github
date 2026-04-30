@@ -36,13 +36,13 @@ categories:
 version-resolver:
   major:
     labels:
-      - "major"
+      - "increment/major"
   minor:
     labels:
-      - "minor"
+      - "increment/minor"
   patch:
     labels:
-      - "patch"
+      - "increment/patch"
   default: patch
 template: |
   $CHANGES
