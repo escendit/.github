@@ -1,0 +1,78 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchDatasources": ["dotnet-version"],
+      "labels": ["dependencies/dotnet-sdk"]
+    },
+    {
+      "matchDatasources": ["nuget"],
+      "labels": ["dependencies/nuget"]
+    },
+    {
+      "matchDatasources": ["crate"],
+      "labels": ["dependencies/rust"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "labels": ["dependencies/containers"]
+    },
+    {
+      "matchDatasources": ["helm"],
+      "labels": ["dependencies/helm"]
+    },
+    {
+      "matchDatasources": ["maven"],
+      "labels": ["dependencies/java"]
+    },
+    {
+      "matchDatasources": ["rust-version"],
+      "labels": ["dependencies/rust"]
+    },
+    {
+      "matchManagers": ["fleet"],
+      "labels": ["dependencies/fleet"]
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "labels": ["dependencies/containers"]
+    },
+    {
+      "matchManagers": ["nuget"],
+      "labels": ["dependencies/nuget"]
+    },
+    {
+      "matchManagers": ["maven", "maven-wrapper"],
+      "labels": ["dependencies/java"]
+    },
+    {
+      "matchManagers": ["cargo"],
+      "labels": ["dependencies/rust"]
+    },
+    {
+      "matchManagers": ["bun", "bun-version"],
+      "labels": ["dependencies/npmjs"]
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "groupName": "major updates",
+      "automerge": false,
+      "labels": ["major"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "minor and patch updates",
+      "automerge": false
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "labels": ["minor"]
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "labels": ["patch"]
+    }
+  ],
+  "schedule": ["every weekend"],
+  "prConcurrentLimit": 10
+}
