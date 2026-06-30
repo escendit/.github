@@ -21,8 +21,9 @@
     },
     {
       "groupName": ".NET SDK update",
-      "matchUpdateTypes": ["minor","patch"],
       "matchDatasources": ["dotnet-version"],
+      "matchPackageNames": ["dotnet-sdk"],
+      "allowedVersions": "/^10\\.0\\.1\\d\\d$/",
       "labels": ["dependencies/dotnet-sdk"]
     },
     {
