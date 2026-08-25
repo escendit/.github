@@ -29,6 +29,7 @@ categories:
       - "dependencies/containers"
       - "dependencies/dotnet-sdk"
       - "dependencies/nuget"
+      - "dependencies/npmjs"
   - title: "🧑🏼‍💻 Development Tooling"
     labels:
       - "area/dev-tooling"
