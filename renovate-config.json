@@ -240,7 +240,7 @@
 
     {
       "matchDatasources": ["crate"],
-      "labels": ["dependencies/rust"]
+      "labels": ["dependencies/cargo"]
     },
     {
       "matchDatasources": ["docker"],
@@ -252,11 +252,11 @@
     },
     {
       "matchDatasources": ["maven"],
-      "labels": ["dependencies/java"]
+      "labels": ["dependencies/maven"]
     },
     {
       "matchDatasources": ["rust-version"],
-      "labels": ["dependencies/rust"]
+      "labels": ["dependencies/rust-toolchain"]
     },
     {
       "matchManagers": ["fleet"],
@@ -272,11 +272,11 @@
     },
     {
       "matchManagers": ["maven", "maven-wrapper"],
-      "labels": ["dependencies/java"]
+      "labels": ["dependencies/maven"]
     },
     {
       "matchManagers": ["cargo"],
-      "labels": ["dependencies/rust"]
+      "labels": ["dependencies/cargo"]
     },
     {
       "matchManagers": ["bun", "bun-version"],
@@ -284,15 +284,15 @@
     },
     {
       "matchUpdateTypes": ["major"],
-      "labels": ["major"]
+      "addLabels": ["major"]
     },
     {
       "matchUpdateTypes": ["minor"],
-      "labels": ["minor"]
+      "addLabels": ["minor"]
     },
     {
       "matchUpdateTypes": ["patch"],
-      "labels": ["patch"]
+      "addLabels": ["patch"]
     }
   ],
 
